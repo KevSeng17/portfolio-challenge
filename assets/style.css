@@ -1,0 +1,79 @@
+:root {
+    --headers: white
+
+}
+
+.all-subjects {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  color: var(--headers);
+  background-color: darkgoldenrod;
+
+}
+
+h2 {
+   padding: 25px;
+    color: var(--headers);
+}
+.headpiece {
+    color: var(--headers);
+    padding: 15px;
+    position: center;
+    margin: 15px;
+}
+
+.contact-info:hover {
+ text-underline-position: below;
+ cursor: pointer;
+ color: green;
+}
+body {
+   background-color: darkgrey;
+}
+.profile-pic{
+    max-width: 220px;
+    max-height: 220px;
+    position: center;
+}
+.HTML {
+    display: flex;
+    position: relative;
+    justify-content: end;
+    min-width: 400px;
+    min-height: 350px;
+    cursor: pointer;
+    border-radius: 8%;
+}
+.css-page {
+    display: inline-block;
+    flex-wrap: wrap;
+    position: relative;
+    cursor: pointer;
+    border-radius: 8%;
+}
+.logo {
+display: inline;
+max-width: 140px;
+max-height: 200px;
+cursor: pointer;
+border-radius: 10%;
+box-shadow: 8%;
+}
+.bottom-section {
+    display: flex;
+    position: center;
+    padding: 40px;
+    margin-left: 50px;
+}
+.subject-name {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
