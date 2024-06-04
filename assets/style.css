@@ -20,7 +20,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 
 .navbar li {
@@ -62,14 +62,30 @@ body {
   gap: 20px;
   justify-content: center;
 }
+.me {
+  text-align: center;
+}
 
 .work-item {
   width: 200px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   text-align: center;
 }
-
+.current-project {
+  position: relative;
+  max-width: 700px;
+  right: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.past-projects {
+  max-height: 350px;
+  position: relative;
+  left: 150px; 
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .featured img {
   width: 300px;
