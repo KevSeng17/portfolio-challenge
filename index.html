@@ -7,43 +7,45 @@
 
     <title>Ethan's Portfolio</title>
   </head>
-  <body>
-    <h1 class="headpiece">Welcome To My Portfolio</h1>
-    <img
-      class="profile-pic"
-      src="c:\Users\Kevin\OneDrive\Pictures\Camera Roll\WIN_20240223_21_48_52_Pro.jpg"
-      alt="Profile picture"
-    />
-    <p>
-      This is my portfolio of previous works I have created or been a part of. There is also more information on what languages I know and how extensively. If you have any questions please feel free to
-      <button class="contact-info">contact me.</button>
-    </p>
-    <section>
-      <div class="all-subjects">
-        <h3 class="subject-name">
-          HTML
-          <img
-            class="HTML"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWO1ZTWgnko0CCyuoWC2Z9ZL4braDKiLhbZxZL5QNHPiObfpUiRymtpR_9Q_ofvM8Bx6k&usqp=CAU"
-            alt="HTML tab"
-          />
-        </h3>
-        <aside>
-        <h3 class="subject-name">CSS
-          <img class ="css-page" src="https://planetjon.ca/wp-content/uploads/2018/12/css-logo.png" alt="CSS page">
-        </h3>
-      </aside>
-        <h3 class="subject-name">Javascript
-          <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript logo">
-        </h3>
+  <body>s
+    <nav class ="navbar">
+      <ul>
+        <li><a href="#about">CSS</a></li>
+        <li><a href="#work">HTML</a></li>
+        <li><a href="#contact">JavaScript</a></li>
+      </ul>
+    </nav>
+    <header class="header">
+    <img src="avatar.jpg" alt="My Avatar" class="avatar">
+    <h1>Ethan Sengpaseuth</h1>
+    </header>
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>Hello my name is Ethan Sengpaseuth and I decided to try my hand in some code work. Here is a quick little portfolio I've created to show my challenges and work. Feel free to contact me</p>
+    </section>
+    <section id="work" class="section">
+      <h2>My Work</h2>
+      <div class="work-folder">
+        <div class="work-item">
+          <a href="https://example.com/app1">
+            <img src="/portfolio-rough/pics/Css-logo.jpg" alt="CSS">
+            <h3>CSS</h3>
+          </a>
+        </div>
+        <div class="work-item">
+          <a href="https://example.com/app2" target="_blank">
+            <img src="" alt="JavaScript">
+            <h3>JavaScript</h3>
+          </a>
+        </div>
+        <div class="work-item">
+          <a href="https://example.com/app3" target="_blank">
+            <img src="" alt="HTML">
+            <h3>HTML</h3>
+          </a>
+        </div>
       </div>
     </section>
-    <h2 class="bottom-section">About Me</h2>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit adipisci
-      sapiente id quo perspiciatis, impedit explicabo aspernatur sint neque quod
-      fugiat sed pariatur doloremque, dolorem dicta illo reprehenderit doloribus
-      excepturi!
-    </p>
+
   </body>
 </html>

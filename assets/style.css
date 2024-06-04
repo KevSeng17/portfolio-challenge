@@ -1,80 +1,82 @@
-:root {
-  --headers: white;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: cornsilk;
 }
 
-.all-subjects {
+.navbar {
+  background-color: #333;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  border-radius: 10px;
-  color: var(--headers);
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+.navbar li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.header {
+  text-align: center;
+  padding: 100px 20px 50px;
   background-color: darkgray;
 }
 
-h2 {
-  padding: 25px;
-  color: var(--headers);
-}
-.headpiece {
-  color: var(--headers);
-  padding: 15px;
-  position: center;
-  margin: 15px;
+.avatar {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
 
-.contact-info:hover {
-  text-underline-position: below;
-  cursor: pointer;
-  color: green;
+.section {
+  padding: 60px 20px;
+  margin-top: 60px;
 }
-body {
-  background-color: darkgrey;
-}
-.profile-pic {
-  max-width: 220px;
-  max-height: 220px;
-  position: center;
-}
-.HTML {
-  display: flex;
-  position: relative;
-  right: 400px;
-  justify-content: end;
-  min-width: 400px;
-  min-height: 350px;
-  cursor: pointer;
-  border-radius: 8%;
-}
-.css-page {
-  display: inline-block;
-  flex-wrap: wrap;
-  position: relative;
-  left: 350px;
-  bottom: 385px;
-  cursor: pointer;
-  border-radius: 8%;
-}
-.logo {
-  display: inline;
-  max-width: 140px;
-  max-height: 200px;
-  cursor: pointer;
-  border-radius: 10%;
-  box-shadow: 8%;
-}
-.bottom-section {
-  display: flex;
-  position: center;
-  padding: 40px;
-  margin-left: 50px;
-}
-.subject-name {
+
+.work-folder {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.work-item {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.featured img {
+  width: 300px;
+}
+
+@media (max-width: 600px) {
+  .featured img {
+    width: 100%;
+  }
 }
